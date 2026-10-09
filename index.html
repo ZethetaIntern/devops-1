@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PaySecure DR Architecture</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #0f172a, #111827 40%, #1e293b);
+        color: #e5e7eb;
+      }
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 48px 24px 80px;
+      }
+      h1 {
+        margin: 0 0 16px;
+        font-size: 2.2rem;
+      }
+      .lead {
+        font-size: 1.06rem;
+        color: #cbd5e1;
+        line-height: 1.6;
+        margin-bottom: 32px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 18px;
+      }
+      .card {
+        background: rgba(15, 23, 42, 0.8);
+        border: 1px solid rgba(148, 163, 184, 0.25);
+        border-radius: 12px;
+        padding: 18px 18px 14px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+      }
+      .card h2 {
+        margin-top: 0;
+        font-size: 1.1rem;
+        color: #f8fafc;
+      }
+      .card p {
+        color: #cbd5e1;
+        line-height: 1.5;
+        min-height: 72px;
+      }
+      a {
+        display: inline-block;
+        margin-top: 8px;
+        color: #7dd3fc;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .badge {
+        display: inline-block;
+        margin: 14px 0 20px;
+        padding: 7px 12px;
+        border-radius: 999px;
+        font-size: 0.8rem;
+        background: rgba(34,197,94,0.15);
+        border: 1px solid rgba(34,197,94,0.4);
+        color: #bbf7d0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="badge">PaySecure Gateway Private Limited</div>
+      <h1>Multi-Region Disaster Recovery Architecture</h1>
+      <div class="lead">
+        A two-region resilience program for AWS Mumbai primary and AWS Hyderabad recovery, designed to achieve
+        99.99% uptime, RPO under 1 minute, and RTO under 5 minutes by Q3 2026.
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h2>Project Overview</h2>
+          <p>Executive summary, assumptions, resilience targets, and architecture scope.</p>
+          <a href="README.md">Open README</a>
+        </div>
+
+        <div class="card">
+          <h2>Architecture</h2>
+          <p>Active-active vs active-passive model, regional flow, and service resilience design.</p>
+          <a href="docs/architecture.md">Open architecture</a>
+        </div>
+
+        <div class="card">
+          <h2>Infrastructure</h2>
+          <p>Network, accounts, availability zones, edge protection, and service placement.</p>
+          <a href="docs/infrastructure.md">Open infrastructure</a>
+        </div>
+
+        <div class="card">
+          <h2>Replication</h2>
+          <p>Detailed strategies for Aurora PostgreSQL, DynamoDB, Redis, and Kafka.</p>
+          <a href="docs/replication.md">Open replication</a>
+        </div>
+
+        <div class="card">
+          <h2>Runbooks</h2>
+          <p>Twelve production-quality disaster recovery runbooks for critical failure scenarios.</p>
+          <a href="docs/runbooks.md">Open runbooks</a>
+        </div>
+
+        <div class="card">
+          <h2>Compliance</h2>
+          <p>Control mapping to RBI, PCI-DSS, NPCI UPI, and India localisation requirements.</p>
+          <a href="docs/compliance.md">Open compliance</a>
+        </div>
+
+        <div class="card">
+          <h2>Risk Register</h2>
+          <p>Risk categories, owners, mitigations, and production acceptance criteria.</p>
+          <a href="docs/risk-register.md">Open risk register</a>
+        </div>
+
+        <div class="card">
+          <h2>Roadmap</h2>
+          <p>Phased delivery plan, workstreams, testing matrix, and go-live gates.</p>
+          <a href="docs/roadmap.md">Open roadmap</a>
+        </div>
+
+        <div class="card">
+          <h2>Board Presentation</h2>
+          <p>Five-member Business Continuity Review Board narrative and approval motion.</p>
+          <a href="docs/board-presentation.md">Open board deck</a>
+        </div>
+
+        <div class="card">
+          <h2>Implementation Blueprint</h2>
+          <p>Execution-ready implementation phases and engineering handoff checklist.</p>
+          <a href="docs/implementation-blueprint.md">Open blueprint</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
